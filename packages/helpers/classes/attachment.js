@@ -6,8 +6,8 @@
 const toCamelCase = require('../helpers/to-camel-case');
 const toSnakeCase = require('../helpers/to-snake-case');
 const deepClone = require('../helpers/deep-clone');
-const fs = require('fs');
-const path = require('path');
+// const fs = require('fs');
+// const path = '';
 
 /**
  * Attachment class
@@ -68,7 +68,7 @@ class Attachment {
    * Read a file and return its content as base64
    */
   readFile(filePath) {
-    return fs.readFileSync(path.resolve(filePath));
+    return ''; // fs.readFileSync(path.resolve(filePath));
   }
 
   /**
